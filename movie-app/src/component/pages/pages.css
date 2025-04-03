@@ -1,0 +1,73 @@
+/*Home page css*/
+.most-rated-movie-container{
+    padding: 0 2rem;
+}
+.rating-container{
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 14rem;
+    scrollbar-width: none;
+    padding: 0.5rem;
+}
+.rating-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/*Movie page css*/
+.movie-container{
+    padding: 0 2rem;
+}
+.search-filter-container{
+
+}
+.search-input{
+    padding: 0.5rem;
+    font-size: 24px;
+    width: 30rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #4d4c4c;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+.movie-filter-button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.filter-button{
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background: #4d4c4c;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+.filter-button:hover{
+    background: #1DA1F2;
+}
+
+.movie-item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+}

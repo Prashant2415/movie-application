@@ -1,0 +1,90 @@
+/*Imagecard component css*/
+.imagecard-container{
+    height: 12rem;
+}
+.imagecard-container:hover{
+    box-shadow: 0px 0px 8px 3px #94c5e3e3;
+}
+.imagecard-container:focus-visible{
+    outline: 2px solid #94c5e3e3;
+}
+.imagecard-image{
+    width: 20rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+/*Card css*/
+
+.card-container{
+    width: 22rem;
+    height: 25rem;
+    background: #000000e8;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.card-image{
+    width: 22rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.card-content{
+
+}
+.card-title{
+
+}
+.card-genre{
+    font-size: 20px;
+}
+.card-plot{
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-button-container{
+    display: flex;
+    gap: 2rem;
+}
+.card-button{
+    padding: 0.5rem 2rem;
+    font-family: "Iceland", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.primary{
+    background: #4d4c4c;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+.primary:hover{
+    background: #1DA1F2;
+}
+.secondary{
+    background: #4d4c4c;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+.secondary:hover{
+    background: #868484;
+}
+
+.ptag-margin{
+    margin: 0;
+}
+.ptag-top{
+    margin-top: 0;
+}
+.ptag-bottom{
+    margin-bottom: 0;
+}

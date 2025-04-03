@@ -1,0 +1,130 @@
+/*Header css*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #222; /* Optional: Background color */
+}
+
+.logo {
+    font-size: 42px;
+    margin: 0;
+    color: #fff;
+}
+
+/* Navigation container */
+.nav-container {
+    flex-grow: 1;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1DA1F2;
+}
+
+/* Primary Button */
+.primary-button {
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background: #4d4c4c;
+    transition: background 0.3s ease;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Iceland", sans-serif;
+}
+
+.primary-button:hover {
+    background: #1DA1F2;
+}
+
+/* Responsive Styles */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        /* align-items: center; */
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-ul {
+        /* flex-direction: column; */
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .primary-button {
+        padding: 0.5rem 1.5rem;
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .primary-button {
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+    }
+}
+.active{
+    color: #1DA1F2;
+    font-weight: bold;
+    border-bottom: 2px solid #1DA1F2;
+}
+
+/*Template page css*/
+.template-container{
+
+}
+.main-container{
+    min-height: 75vh;
+}

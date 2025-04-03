@@ -1,19 +1,43 @@
+import { createBrowserRouter } from 'react-router'
 import './App.css'
-import { MovieData } from './component/MovieData'
-
+import Template from './component/layout/Template'
+import Home from './component/pages/Home'
+import Movies from './component/pages/Movies'
+import MovieItem from './component/pages/MovieItem'
+import Watchlist from './component/pages/Watchlist'
+import About from './component/pages/About'
+import { RouterProvider } from 'react-router-dom'
 function App() {
-  const data = MovieData
+  const router = createBrowserRouter([
+    {
+      path: "",
+      element: <Template/>,
+      children: [
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/movies",
+          element: <Movies/>
+        },
+        {
+          path: "/movieItem",
+          element: <MovieItem/>
+        },
+        {
+          path: "/watchlist",
+          element: <Watchlist/>
+        },
+        {
+          path: "/about",
+          element: <About/>
+        }
+      ]
+    }
+  ])
   return (
-    <>
-      <h1>Movie application</h1>
-      {
-        data.map((d)=>{
-          return(
-            <img className='image' src={d.image_link} alt={d.title}/>
-          )
-        })
-      }
-    </>
+    <RouterProvider router={router}/>
   )
 }
 
