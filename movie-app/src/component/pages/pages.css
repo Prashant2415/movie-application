@@ -1,6 +1,7 @@
 /*Home page css*/
 .most-rated-movie-container{
     padding: 0 2rem;
+    margin-bottom: 1rem;
 }
 .rating-container{
     display: flex;
@@ -66,8 +67,8 @@
 
 .movie-item-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 0fr));
+    gap: 5rem;
     justify-content: center;
     padding: 2rem 0;
 }
@@ -274,4 +275,101 @@
 }
 .movie-item-content-container{
     height: 24rem;
+}
+
+
+/*Responsive flow Mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .carousel-multimedia{
+        object-fit: none;
+    }
+    
+    .home-container{
+        height: 50rem;
+    }
+    .search-input{
+        width: 19rem;
+    }
+    .aboutus-content{
+        gap: 2rem;
+        width: 20rem;
+    }
+    .trailer-container{
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .movieitem-content-container{
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 1rem;
+    }
+    .item-plot{
+        font-size: 18px;
+    }
+    .button-item-container{
+        width: 100%;
+    }
+    .addtowatch{
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+    
+}
+/*Responsive flow Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .aboutus-content{
+        gap: 1rem;
+        width: 44rem;
+    }
+    .movie-item-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 0fr));
+        gap: 2rem;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .watchlist-card-container{
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 0fr));
+    }
+    .trailer-container{
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    .movieitem-content-container{
+        width: 100%;
+        margin-bottom: 1rem;
+        box-shadow: none;
+    }
+    .movie-item-content-container{
+        height: 21rem;
+    }
+    .button-item-container{
+        width: 100%;
+    }
+    
+}
+/*Responsive flow Desktop*/
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .trailer-container{
+        width: 100%;
+        height: 21rem;
+        margin-bottom: 1rem;
+    }
+    .movie-item-container{
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 0fr));
+    }
+    .watchlist-card-container{
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 0fr));
+    }
+    .movieitem-content-container{
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 27rem;
+        box-shadow: none;
+    }
+    .button-item-container{
+        width: 100%;
+    }
+   
 }

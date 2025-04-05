@@ -118,6 +118,8 @@
     align-items: baseline;
     justify-content: space-evenly;
     padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .casting-content{
     width: 10rem;
@@ -148,4 +150,62 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .carousel-content-container{
+        top: 5rem;
+        left: 1rem;
+    }
+    .content-title{
+        font-size: 32px;
+    }
+    .content-plot{
+        font-size: 18px;
+        height: 4rem;
+        width: 18rem;
+    }
+    .carousel-container{
+        height: 20rem;
+    }
+    .card-container{
+        width: fit-content;
+    }
+    .card-image{
+        width: 21rem;
+    }
+    .casting-container{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .casting-container{
+        /* width: 100%; */
+        margin-bottom: 1rem;
+    }
+    .carousel-content-container{
+        top: 6rem;
+        left: 2rem;
+    }
+    .content-title{
+        font-size: 32px;
+    }
+    .content-plot{
+        font-size: 18px;
+        height: 4rem;
+        width: 18rem;
+    }
+    .carousel-container{
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .casting-container{
+        margin-bottom: 1rem;
+        /* width: 100%; */
+    }
 }
