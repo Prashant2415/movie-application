@@ -51,7 +51,7 @@ const Movies = () => {
         </form>
         {flag && (
           <div className="clear-filter">
-            <button className='clear-filter-button' onClick={handleClearFilter}>Cear filter</button>
+            <button className='clear-filter-button' onClick={handleClearFilter}>Clear filter</button>
           </div>
         )}
         <div className="movie-filter-button-container">

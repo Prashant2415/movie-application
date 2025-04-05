@@ -29,7 +29,7 @@ const Carousel = ({data,timeInterval}) => {
                 ))} */}
                 {/* import avatar from "../../../../dist/assets/Avatar.mp4" */}
                 <video className='carousel-multimedia' autoPlay muted loop key={currentItem}>
-                    <source src={`./dist/assets/${carouselData[currentItem].trailer}.mp4#t=30`} type='video/mp4'/>
+                    <source src={`/assets/${carouselData[currentItem].trailer}.mp4#t=30`} type='video/mp4'/>
                 </video>
             </div>
         </div>
