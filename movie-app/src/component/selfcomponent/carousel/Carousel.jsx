@@ -28,7 +28,7 @@ const Carousel = ({data,timeInterval}) => {
                     </video>
                 ))} */}
                 <video className='carousel-multimedia' autoPlay muted loop key={currentItem}>
-                    <source src={`./src/assets/movies/${carouselData[currentItem].trailer}.mp4#t=30`} type='video/mp4'/>
+                    <source src={`./src/assets/${carouselData[currentItem].trailer}.mp4#t=30`} type='video/mp4'/>
                 </video>
             </div>
         </div>

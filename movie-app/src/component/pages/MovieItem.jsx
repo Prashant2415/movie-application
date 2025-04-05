@@ -25,7 +25,7 @@ const MovieItem = () => {
       <div className="item-content-container">
         <div className="trailer-container">
           <video className='trailer-content' autoPlay muted loop>
-            <source src={`./src/assets/movies/${trailer}.mp4#t=30`} />
+            <source src={`./src/assets/${trailer}.mp4#t=30`} />
           </video>
         </div>
         <div className="movieitem-content-container">
