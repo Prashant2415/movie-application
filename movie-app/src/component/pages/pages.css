@@ -181,10 +181,10 @@
     display: flex;
     flex-wrap: wrap;
     /* gap: 1rem; */
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 .trailer-container{
-    width: 50rem;
+    width: 53rem;
     height: 29rem;
 }
 .trailer-content{
@@ -211,6 +211,7 @@
 
 }
 .item-year{
+    font-size: 20px;
 }
 .item-title{
     font-size: 28px;
@@ -220,6 +221,7 @@
 }
 .item-plot{
     font-size: 24px;
+    color: #938d8d;
 }
 .item-rating{
     font-size: 24px;
@@ -260,4 +262,16 @@
 }
 .addtowatch:hover{
     background: #1DA1F2;
+}
+.item-common-content{
+    font-size: 20px;
+}
+.strong-text{
+    display: inline-block;
+    width: 6rem;
+    font-size: 20px;
+    color: #1DA1F2;
+}
+.movie-item-content-container{
+    height: 24rem;
 }

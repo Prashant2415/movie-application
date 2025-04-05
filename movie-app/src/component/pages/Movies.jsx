@@ -6,6 +6,7 @@ import Card from '../selfcomponent/card/Card'
 import { addToWatchlist } from '../../redux/movieSlice'
 import { useNavigate } from 'react-router'
 const Movies = () => {
+  window.scrollTo({top:0, behavior: "smooth"})
   const movieData = useSelector((state) => state.movieSlice.movieData)
   const categoryData = [...new Set(movieData.flatMap((item) => item.genre))]
   const [searchInput, setSearchInput] = useState("")

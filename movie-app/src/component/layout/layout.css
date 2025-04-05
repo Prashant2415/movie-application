@@ -128,3 +128,35 @@
 .main-container{
     min-height: 75vh;
 }
+
+
+
+/*Footer page css*/
+.footer-container{
+    padding: 0rem 1rem;
+    background: black;
+}
+.footer-content-container{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.copyright{
+    font-size: 24px;
+}
+.footer-nav-link-container{
+    display: flex;
+    gap: 2rem;
+}
+.footer-nav-link{
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.footer-nav-link:hover{
+    color: #1DA1F2;
+}
+.footer-credit{
+    font-size: 20px;
+}

@@ -1,6 +1,8 @@
 /*Imagecard component css*/
 .imagecard-container{
-    height: 12rem;
+    height: 14rem;
+    padding: 2px;
+    cursor: pointer;
 }
 .imagecard-container:hover{
     box-shadow: 0px 0px 8px 3px #94c5e3e3;
@@ -12,6 +14,11 @@
     width: 20rem;
     height: 12rem;
     object-fit: cover;
+}
+.imagecard-title{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 /*Card css*/
@@ -99,4 +106,46 @@
 }
 .remove-button-item:hover{
     background: red;
+}
+
+
+
+/*Casting Card css*/
+.casting-container{
+    background: #161616;
+    height: 10rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.casting-content{
+    width: 10rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.casting-image{
+    border-radius: 4rem;
+    width: 4.5rem;
+    outline: 1px solid #1DA1F2;
+    box-shadow: 0px 0px 7px 2px #1DA1F2;
+}
+.casting-subtitle{
+    margin-bottom: 0;
+    color: gray;
+}
+.casting-title{
+    margin-bottom: 0;
+}
+.director{
+
+}
+.actors{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 }
